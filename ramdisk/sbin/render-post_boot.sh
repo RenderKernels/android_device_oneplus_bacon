@@ -138,10 +138,12 @@ echo 1497600 > /sys/devices/system/cpu/cpufreq/smartmax/boost_freq
 ############################
 # LMK Tweaks
 #
-echo 1536,2048,4096,16384,28672,32768 > /sys/module/lowmemorykiller/parameters/minfree
-echo 32 > /sys/module/lowmemorykiller/parameters/cost
-#echo 1 > /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk
-#echo 61952 > /sys/module/lowmemorykiller/parameters/vmpressure_file_min
+# echo 1536,2048,4096,16384,28672,32768 > /sys/module/lowmemorykiller/parameters/minfree
+# echo 32 > /sys/module/lowmemorykiller/parameters/cost
+
+# Lets use Adaptive LMK For now!
+echo 1 > /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk
+echo 53059 > /sys/module/lowmemorykiller/parameters/vmpressure_file_min
 
 ############################
 # MISC Tweaks
