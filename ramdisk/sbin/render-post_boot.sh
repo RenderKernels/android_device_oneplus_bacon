@@ -26,18 +26,9 @@ echo 20 > /sys/module/cpu_boost/parameters/boost_ms
 echo 500 > /sys/module/cpu_boost/parameters/input_boost_ms
 echo 0:1497600 1:1497600 2:1497600 3:1497600 > /sys/module/cpu_boost/parameters/input_boost_freq
 echo 1728000 > /sys/module/cpu_boost/parameters/sync_threshold
-echo 25 > /sys/module/cpu_boost/parameters/migration_load_threshold
+echo 20 > /sys/module/cpu_boost/parameters/migration_load_threshold
 echo 1 > /sys/module/cpu_boost/parameters/hotplug_boost
 echo 1 > /sys/module/cpu_boost/parameters/wakeup_boost
-
-############################
-# Thermal
-#
-echo "0" > /sys/kernel/msm_thermal/enabled
-echo "1728000 55 50" > /sys/kernel/msm_thermal/low_thresh
-echo "1574400 61 56" > /sys/kernel/msm_thermal/mid_thresh
-echo "1267200 66 62" > /sys/kernel/msm_thermal/high_thresh
-echo "1" > /sys/kernel/msm_thermal/enabled
 
 ############################
 # Tweak Background Writeout
