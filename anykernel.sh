@@ -169,6 +169,10 @@ replace_string default.prop "ro.secure=0" "ro.secure=1" "ro.secure=0";
 backup_file init.qcom-common.rc;
 append_file init.qcom-common.rc "render-post_boot" init.qcom-common.patch;
 
+# Add F2FS Support for /data and /cache since its can be used on ANY rom
+backup_file fstab.bacon
+replace_file fstab.bacon 750 fstab.bacon;
+
 # panel and gamma
 #backup_file init.qcom-common.rc
 #replace_line init.qcom-common.rc "chown system graphics /sys/devices/virtual/graphics/fb0/panel_calibration" "    chown system system /sys/devices/virtual/graphics/fb0/panel_calibration";
