@@ -8,3 +8,4 @@ ARCH := arm
 ZIMAGE := arch/arm/boot/zImage
 
 ZIP_FILES_DIR := device/oneplus/bacon/anykernel_installer
+TARGET_REQUIRES_DTB := true
