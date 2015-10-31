@@ -1,0 +1,14 @@
+[
+  {
+    "remote": "rk",
+    "repository":	"OPO-CAF-kernel",
+    "target_path":	"kernel/oneplus/bacon",
+    "revision": "cm-12.x-caf"
+  },
+  {
+    "remote": "bb",
+    "repository":	"UBERTC/arm-eabi-5.2",
+    "target_path":	"toolchains/arm-eabi-5.2",
+    "revision": "master"
+  }
+]
