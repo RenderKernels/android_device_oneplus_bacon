@@ -1,6 +1,5 @@
 [
   {
-    "remote": "rk",
     "repository":	"OPO-CAF-kernel",
     "target_path":	"kernel/oneplus/bacon",
     "revision": "cm-12.x-caf"
